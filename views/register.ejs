@@ -1,0 +1,14 @@
+<h1>    register form</h1>
+<% if (error) { %>
+    <h2><%= error %></h2>
+  <% } %>
+<form action="/register" method="POST">
+    <input type="email" name="email" placeholder="email" required>
+    <input type="password" name="password" placeholder="password" required>
+    <input type="text" name='name' placeholder="Name" required>
+
+    <button type="submit">submit</button>
+</form>
+
+<a href="/login">login</a>
+<a href="/">homepage</a>

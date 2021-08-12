@@ -1,0 +1,13 @@
+<h1>    login form</h1>
+<% if (error) { %>
+    <h2><%= error %></h2>
+  <% } %>
+<form action="/login" method="POST">
+    <input type="email" name="email" placeholder="email" required>
+    <input type="password" name="password" placeholder="password" required>
+    <button type="submit">submit</button>
+</form>
+
+<a href="/register">register</a>
+<a href="/">homepage</a>
+
